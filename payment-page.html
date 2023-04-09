@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="website icon" type="png" href="TranZipper Logo.png">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            color: #3c3c3c;
+            background-color: #c4c3ca;
+            overflow-x: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .page {
+            padding-top: 20px;
+            padding-bottom: 50px;
+            width: 380px;
+            margin: 0px auto 10px;
+            border: 1px solid #ddd;
+            background-color: rgb(176, 189, 182);
+            box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, .10);
+        }
+
+        .main-page {
+            margin-left: 0px;
+        }
+
+        .back-icon {
+      display: inline-block;
+      margin-left: 30px;
+      vertical-align: middle;
+    }
+
+        .title {
+            display: inline-block;
+            padding-left: 25px;
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 0;
+        }
+
+        p {
+            margin-left: 15px;
+            font-weight: lighter;
+        }
+
+        .trip-info {
+            width: 350px;
+            margin-left: 10px;
+            background-color: rgba(0, 0, 0, 0.10);
+            border-radius: 7px;
+            padding-left: 10px;
+            padding-top: 5px;
+            display: inline-block;
+            font-size: 14px;
+            margin-bottom: 13px;
+        }
+
+        h2 {
+            font-size: 19px;
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+
+        h3 {
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+
+        .trip-reason {
+            font-size: 14px;
+        }
+
+        .trip-cost,
+        .trip-passenger {
+            font-size: 14px;
+        }
+
+        .head-fees {
+            font-size: 14px;
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .head-cost {
+            display: inline-block;
+        }
+
+        .total-cost {
+            font-size: 25px;
+            font-weight: 500;
+            float: right;
+            display: block;
+            margin-right: 20px;
+        }
+
+        .trip-tatal-cost {
+            font-size: 20px;
+           
+        }
+
+        .wallet {
+            margin-left: 10px;
+            width: 300px;
+        }
+
+        select {
+            width: 150px;
+            height: 30px;
+            font-size: 14px;
+            background-color: rgba(0, 0, 0, 0.10);
+            border-radius: 5px;
+            font-weight: 400;
+        }
+
+        button {
+            background-color: rgb(4, 80, 4);
+            box-shadow: #1a4b02 4px 4px 0px;
+            border-radius: 8px;
+            padding:  15px 100px 15px 100px;
+            margin-top: 10px;
+            color: #fff;
+            border: none;
+            font-weight: bold;
+            font-size: 15px;
+            text-transform: uppercase;
+            min-width: 120px;
+            transition: transform 200ms, box-shadow 200ms;
+            cursor: pointer;
+        }
+
+        button:active {
+            transform: translateY(4px) translateX(4px);
+            box-shadow: #094c66 0px 0px 0px;
+        }
+        .warning {
+            text-align: center;
+            margin-bottom: 0;
+            font-weight: 400;
+            padding-top: 7px;
+        }
+        .warning-words {
+            font-size: 14px;
+            color: crimson;
+            margin-top: 2px;
+            font-weight: 100;
+            padding: 10px 10px 10px 10px;
+        }
+        hr {
+            border-color: #c8cdc5;
+        }
+        .warning-div {
+            width: 270px;
+            background-color: #c4c3ca;
+            margin-top: 10px;
+        }
+        .topic {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 3px;
+        }
+        .subtopic {
+            font-weight: 350;
+            line-height: 3px;
+        }
+
+        h1 {
+      display: inline-block;
+      margin-left: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="main-page">
+        <a href="list-of-riders.html"><div class="back-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="29"
+                viewBox="0 0 256 256" xml:space="preserve">
+
+                <defs>
+                </defs>
+                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                    <path
+                        d="M 45 0 c 24.813 0 45 20.187 45 45 c 0 24.813 -20.187 45 -45 45 C 20.186 90 0 69.813 0 45 C 0 20.187 20.186 0 45 0 z M 51.263 73.4 l 8.6 -8.6 L 40.064 45 l 19.799 -19.799 l -8.6 -8.6 L 22.864 45 L 51.263 73.4 z"
+                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-rule: nonzero; opacity: 1;"
+                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                </g>
+            </svg>
+        </a>
+        </div>
+        <h1>
+           Payment Summary
+        </h1>
+        <p>
+            Pay now to connect with riders and view contact
+        </p>
+        <hr>
+        <div class="trip-info">
+            <div class="head-trip">
+                <p class="topic">
+                    Account Name
+                </p>
+                <p class="trip-reason">
+                    John Peter
+                </p>
+            </div>
+            <div class="head-passenger">
+                <p class="topic">
+                    Passenger&#40;s&#41;</p>
+                <p class="trip-passenger">
+                    1
+                </p>
+            <div class="head-trip">
+                <p  class="topic">
+                    Trip&#47;Reason
+                </p>
+                <div>
+                    <p class="subtopic">
+                        From
+                    </p>
+                    <p class="trip-reason">
+                        Itamaga&comma;Ikorodu
+                    </p>
+                </div>
+                <div>
+                    <p class="subtopic">
+                        To</p>
+                    <p class="trip-reason">
+                        Agric&comma;Ikorodu
+                    </p>
+                </div>
+            </div>
+            <div class="head-cost">
+                <p class="topic">
+                    Amount
+                </p>
+                <p class="trip-cost">
+                    &#8358; 200
+                </p>
+            </div>
+            <div class="head-fees">
+                <p class="topic">
+                    Fees&#47;Baggage Fees
+                </p>
+                <p class="trip-fees">
+                    &#8358; 100
+                </p>
+                <div>
+                </div>
+            </div>
+                <hr>
+            </div>
+            <div>
+            <p class="topic"> 
+                Total 
+            </p>
+                <p>
+                    &#8358; 300&#46;00
+                </p>
+            </div>
+        </div>
+        
+        <div class="wallet">
+            <label for="wallet">From TranZipper Wallet</label>
+            <select id="wallet">
+                <option value="accout">Select your wallet</option>
+                <option value="accout">&#8358; 6&comma;582</option>
+            </select>
+        </div>
+        <div>
+            <center>
+                <a href="payment-successful.html"><button>
+                    PAY NOW
+                </button>
+            </a>
+
+
+            <div class="warning-div">
+            <h4 class="warning">
+                Warning
+            </h4>
+            <p class="warning-words">
+                Pay securely with the TranZipper Cash wallet. Do not hand over cash to anyone offline. Only make payment online
+            </p>
+        </center>
+        </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

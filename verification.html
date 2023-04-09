@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter code</title>
+  <link rel="website icon" type="png" href="TranZipper Logo.png">
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #c4c3ca;
+      background-color: #c4c3ca;
+      overflow-x: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .tranzipperlogo {
+      width: 90px;
+      display: block;
+      margin-top: 20px;
+
+    }
+
+    .page {
+      padding-top: 20px;
+      padding-bottom: 0px;
+      width: 380px;
+      height: 750px;
+      border: 1px solid #ddd;
+      border-radius: 6px 0px 55px 55px;
+      background-color: rgb(3, 49, 25);
+      box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, .10);
+    }
+
+    .main-page {
+      width: 315px;
+      margin-left: 35px;
+      font-size: 14px;
+      margin-bottom: 100px;
+    }
+
+    .back-icon {
+      display: inline-block;
+      margin-left: 30px;
+      vertical-align: middle;
+    }
+
+    .title {
+      display: inline-block;
+      padding-left: 25px;
+      font-size: 18px;
+      margin-top: 0;
+    }
+
+    .control {
+      margin-bottom: 15px;
+
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+
+
+    .btn {
+      padding: 1.25rem;
+      border: 0;
+      border-radius: 3px;
+      background-color: #4F46E5;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .segmentedInput-parent input[type="text"] {
+      height: 75px;
+      text-align: center;
+      margin: 0 5px;
+      width: 35px;
+      height: 55px;
+      text-align: center;
+      margin: 0 5px 30px;
+      line-height: 80px;
+      font-size: 50px;
+      border: solid 1px #ccc;
+      box-shadow: 0 0 5px #ccc inset;
+      outline: none;
+      transition: all 0.2s ease-in-out;
+      border-radius: 3px;
+    }
+
+
+    .phone-confirm,
+    .resend {
+      display: inline-block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <center>
+      <img class="tranzipperlogo" src="TranZipper logo.png"> <p"text-align: center;">
+    </center>
+    <div class="main-page">
+
+      <h1>
+        Enter verification code
+      </h1>
+      <p> Enter the code sent to your email for confirmation</p>
+
+      <center>
+        <form action="confirm-page.html">
+          <input type="text" class="pin" maxlength="4" autofocus /><br />
+          
+        </form>
+
+        <a class="resend" href="#"> Resend confirmation email</a>
+
+        <a class="phone-confirm" href="#">Confirm with phone number</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+        <script type="text/javascript" src="jquery.segmentedInput.js"></script>
+        <script type="text/javascript">
+
+          $(document).ready(function () {
+            $('.pin').segmentedInput({
+              // options
+              autoSubmit: true,
+              fieldClasses: 'class1 class2'
+            });
+          });
+
+        </script>
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-36251023-1']);
+          _gaq.push(['_setDomainName', 'jqueryscript.net']);
+          _gaq.push(['_trackPageview']);
+
+          (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+        <script>
+          try {
+            fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
+              return true;
+            }).catch(function (e) {
+              var carbonScript = document.createElement("script");
+              carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+              carbonScript.id = "_carbonads_js";
+              document.getElementById("carbon-block").appendChild(carbonScript);
+            });
+          } catch (error) {
+            console.log(error);
+          }
+        </script>
+    </div>

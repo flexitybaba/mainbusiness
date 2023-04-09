@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+  <title>Successful</title>
+  <link rel="website icon" type="png" href="TranZipper Logo.png">
+  <style>
+body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #c4c3ca;
+      background-color: #c4c3ca;
+      overflow-x: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .page {
+      padding-top: 20px;
+      padding-bottom: 0px;
+      width: 380px;
+      border: 1px solid #ddd;
+      border-radius: 6px 0px 55px 55px;
+      background-color: rgb(214, 221, 217);
+      box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, .10);
+    }
+
+    .main-page {
+      width: 315px;
+      margin-left: 30px;
+      font-size: 14px;
+      margin-bottom: 150px;
+    }
+
+    h1 {
+      color: #88B04B;
+      font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+      font-weight: 900;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #404F5E;
+      font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    i {
+      color: #9ABC66;
+      font-size: 100px;
+      line-height: 100px;
+      margin-left: -15px;
+    }
+
+    .card {
+      background: white;
+      padding: 60px;
+      border-radius: 4px;
+      box-shadow: 0 2px 3px #C8D0D8;
+      display: inline-block;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .word {
+      display: inline-block;
+    }
+
+    .meaning {
+      display: inline-block;
+    }
+    .drivers-infomation {
+      text-align: justify;
+      margin-left: 100px;
+      margin-bottom: 0px;
+      margin-top: 50px;
+    
+    }
+    .instruction {
+      color: #404F5E;
+      width: 280px;
+      font-size: 12px;
+    }
+    h2 {
+      color: #58616b;
+      margin-bottom: 1px;
+    }
+    button {
+ position: relative;
+ overflow: hidden;
+ border: 1px solid #18181a;
+ color: #ffffff;
+ display: inline-block;
+ font-size: 15px;
+ line-height: 15px;
+ padding:  15px 90px 15px 90px;
+ text-decoration: none;
+ cursor: pointer;
+ background: #08963c;
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+ margin-bottom: 10px;
+ margin-top: 50px;
+}
+
+button span:first-child {
+ position: relative;
+ transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+ z-index: 10;
+}
+
+button span:last-child {
+ color: white;
+ display: block;
+ position: absolute;
+ bottom: 0;
+ transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+ z-index: 100;
+ opacity: 0;
+ top: 50%;
+ left: 50%;
+ transform: translateY(225%) translateX(-50%);
+ height: 14px;
+ line-height: 13px;
+}
+
+button:after {
+ content: "";
+ position: absolute;
+ bottom: -50%;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: black;
+ transform-origin: bottom center;
+ transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+ transform: skewY(9.3deg) scaleY(0);
+ z-index: 50;
+}
+
+button:hover:after {
+ transform-origin: bottom center;
+ transform: skewY(9.3deg) scaleY(2);
+}
+
+button:hover span:last-child {
+ transform: translateX(-50%) translateY(-50%);
+ opacity: 1;
+ transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+a {
+  color: #08963c
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="main-page">
+
+<center>
+    <div style="border-radius:200px; height:80px; width:200px; margin:0 auto;">
+      <i class="checkmark">✓</i>
+    </div>
+    <h1>Success</h1>
+    <p>We received your payment&#59;<br /> you have successfully booked your ride&#33;</p>
+  </center>
+    <div class="drivers-infomation">
+      <h2>
+        Driver&#39;s Infomation
+      </h2>
+      <div class="drivers-name">
+        <p class="word">
+          Name&#58;
+        </p>
+        <p class="meaning">
+          Rasaq Sodiq
+        </p>
+      </div>
+      <div class="drivers-number">
+        <p class="word">
+          Phone Number&#58;
+        </p>
+        <p class="meaning">
+          <a href="tel:08055540365">08055540365</a>
+        </p>
+      </div>
+      <div class="drivers-id">
+        <p class="word">
+          Driver ID&#58;
+        </p>
+        <p class="meaning">
+          &#35;22381
+        </p>
+      </div>
+      </div>
+      <center>
+      <div>
+<a href="homepage.html"><button><span class="text">Dismiss</span><span>Thanks!</span>
+</button>
+</a>
+    </div>
+    <div class="instruction">
+      Call your Driver now or wait a few seconds for driver to contact you, discuss on your meeting point and time frame
+    </div>
+  </center>
+</div>
+    </div>
+</body>
+
+</html>

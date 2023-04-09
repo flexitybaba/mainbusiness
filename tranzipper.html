@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="website icon" type="png" href="TranZipper Logo.png">
+  <title> TranZipper&#8482;</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.7;
+      background-color: #c4c3ca;
+      overflow-x: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h2 {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .tranzipperlogo {
+      width: 90px;
+      display: block;
+      margin-top: 20px;
+
+    }
+
+    .tranzipper-title {
+      font-size: 18px;
+    }
+
+    .create-button {
+      background-color: rgb(4, 80, 4);
+      color: white;
+      border: none;
+      padding: 15px 100px 15px 100px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 1s;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.10);
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .create-button:hover {
+      background-color: rgb(2, 66, 2);
+    }
+
+    .create-button:active {
+      opacity: 0.7;
+    }
+
+    .signin-button {
+      background-color: white;
+      border-color: rgb(4, 80, 4);
+      border-style: solid;
+      border-width: 1px;
+      color: rgb(4, 80, 4);
+      padding: 15px 90px 15px 90px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 1s;
+      color: 1s;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.10);
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .signin-button:hover {
+      background-color: rgb(4, 80, 4);
+      color: white;
+    }
+
+    .signin-button:active {
+      opacity: 0.9;
+    }
+
+    .we-connect-you {
+      width: 250px;
+      font-size: 14px;
+      color: rgb(4, 80, 4);
+      margin-bottom: 60px;
+    }
+
+    .slider {
+      width: 380px;
+      height: 300px;
+      background-color: yellow;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .image-container {
+      width: 1500px;
+      background-color: rgb(216, 216, 216);
+      height: 300px;
+      clear: both;
+      position: relative;
+      -webkit-transition: left 2s;
+      -moz-transition: left 2s;
+      -o-transition: left 2s;
+      transition: left 2s;
+    }
+
+    .slide {
+      float: left;
+      margin: 0px;
+      padding: 0px;
+      position: relative;
+      object-fit: cover;
+    }
+
+    #slide-1:target~.image-container {
+      left: 0px;
+    }
+
+    #slide-2:target~.image-container {
+      left: -500px;
+    }
+
+    #slide-3:target~.image-container {
+      left: -1000px;
+    }
+
+    .buttons {
+      position: relative;
+      top: -20px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      height: 15px;
+      width: 15px;
+      border-radius: 50px;
+      background-color: lightgreen;
+    }
+
+
+    .page {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      width: 380px;
+      margin: 0px auto 10px;
+      border: 1px solid #ddd;
+      background-color: rgb(216, 216, 216);
+      box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, .10);
+      border-radius: 6px 0px 55px 55px;
+    }
+    a {
+      margin-bottom: 100px;
+      cursor: pointer;
+      text-decoration: none;
+      color: rgb(2, 55, 2);
+    }
+    .become {
+      margin-bottom: 100px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <center>
+      <img class="tranzipperlogo" src="TranZipper logo.png"> <p"text-align: center;">&nbsp;&nbsp;
+
+        <h1 class="tranzipper-title">
+          TranZipper Ride&#8482;
+        </h1>
+
+
+        <div class="slider">
+          <span id="slide-1"></span>
+          <span id="slide-2"></span>
+          <span id="slide-3"></span>
+          <span id="slide-4"></span>
+          <div class="image-container">
+            <img src="danfo-homepage.png" class="slide" width="500" height="300" />
+            <img src="school-dropoff.png" class="slide" width="500" height="300" />
+            <img src="korupe-hompage.png" class="slide" width="500" height="300" />
+          </div>
+          <div class="buttons">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+          </div>
+        </div>
+
+
+
+        <h2 class="grow-your-business">
+          Seat and Relax...
+        </h2>
+        <p class="we-connect-you">
+          At the comfort of your house you can do so many things... We got you covered!!!
+        </p>
+<a href="signup-user.html">
+        <button class="create-button">
+          Create an account
+        </button>
+</a>
+<a href="login-page.html">
+        <button class="signin-button">
+          Sign in
+        </button>
+      </a>
+        <div class="become">
+        <a href="#">Be a TranZipper&#8482; today</a>
+      </div>
+  </div>
+
+
+  </center>
+  </div>
+</body>
+
+
+
+</html>
